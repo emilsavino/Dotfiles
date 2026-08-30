@@ -1,0 +1,104 @@
+# ~/.config/ghostty/config
+#
+# Dark & minimal theme with a touch of color for paths, prompts, etc.
+# Font: JetBrains Mono
+# Tab switching: Cmd + Left/Right Arrow (iTerm2-style)
+
+# ---------------------------
+# Font
+# ---------------------------
+font-family = JetBrains Mono
+font-size = 14
+font-thicken = true
+
+# ---------------------------
+# Theme / colors
+# ---------------------------
+# Dark, low-contrast background with brighter accent colors so
+# paths, prompts, and syntax highlighting still pop.
+background = #1a1b1e
+foreground = #d8dee9
+
+cursor-color = #88c0d0
+cursor-text = #1a1b1e
+
+selection-background = #3b4048
+selection-foreground = #d8dee9
+
+# ANSI 16-color palette (0-7 normal, 8-15 bright)
+palette = 0=#1a1b1e
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#61afef
+palette = 5=#c678dd
+palette = 6=#56b6c2
+palette = 7=#d8dee9
+palette = 8=#5c6370
+palette = 9=#e06c75
+palette = 10=#98c379
+palette = 11=#e5c07b
+palette = 12=#61afef
+palette = 13=#c678dd
+palette = 14=#56b6c2
+palette = 15=#ffffff
+
+# Slight transparency for a modern, minimal feel (set to 1 to disable)
+background-opacity = 0.98
+background-blur-radius = 20
+
+# ---------------------------
+# Window
+# ---------------------------
+window-padding-x = 4
+window-padding-y = 0
+window-decoration = true
+window-theme = dark
+mouse-hide-while-typing = true
+
+# ---------------------------
+# Cursor behavior
+# ---------------------------
+cursor-style = block
+cursor-style-blink = false
+
+# ---------------------------
+# Scrollback
+# ---------------------------
+scrollback-limit = 10000
+
+# ---------------------------
+# Shell integration
+# ---------------------------
+shell-integration = detect
+shell-integration-features = cursor,sudo,title
+
+# ---------------------------
+# Keybindings — iTerm2-style tab navigation
+# ---------------------------
+# Cmd + Left/Right Arrow moves between tabs
+keybind = cmd+left=previous_tab
+keybind = cmd+right=next_tab
+
+# Cmd + 1-9 jumps directly to a tab (also common in iTerm2)
+keybind = cmd+1=goto_tab:1
+keybind = cmd+2=goto_tab:2
+keybind = cmd+3=goto_tab:3
+keybind = cmd+4=goto_tab:4
+keybind = cmd+5=goto_tab:5
+keybind = cmd+6=goto_tab:6
+keybind = cmd+7=goto_tab:7
+keybind = cmd+8=goto_tab:8
+keybind = cmd+9=goto_tab:9
+
+# Cmd+T new tab, Cmd+W close tab (Ghostty defaults, listed for clarity)
+keybind = cmd+t=new_tab
+keybind = cmd+w=close_surface
+
+# Splits (optional, comment out if you don't want them)
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
+keybind = cmd+alt+left=goto_split:left
+keybind = cmd+alt+right=goto_split:right
+keybind = cmd+alt+up=goto_split:up
+keybind = cmd+alt+down=goto_split:down

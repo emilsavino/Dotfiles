@@ -1,0 +1,26 @@
+# Copy this file to ~/.zshrc.local for machine-specific shell setup.
+#
+# This file is intentionally not linked or tracked by the installer. Keep
+# credentials, private paths, and host-specific tooling here.
+#
+# Example Miniconda setup:
+#
+# conda_bin="/opt/homebrew/Caskroom/miniconda/base/bin/conda"
+# if [[ -x "$conda_bin" ]]; then
+#     __conda_setup="$("$conda_bin" shell.zsh hook 2> /dev/null)"
+#     if [ $? -eq 0 ]; then
+#         eval "$__conda_setup"
+#     else
+#         conda_base="${conda_bin:h:h:h}"
+#         if [ -f "$conda_base/etc/profile.d/conda.sh" ]; then
+#             . "$conda_base/etc/profile.d/conda.sh"
+#         else
+#             export PATH="$conda_base/bin:$PATH"
+#         fi
+#     fi
+#     unset __conda_setup
+# fi
+#
+# Example Java classpath:
+#
+# export CLASSPATH=".:/path/to/antlr-4.13.2-complete.jar"
